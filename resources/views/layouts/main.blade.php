@@ -28,17 +28,17 @@
         }
 
 
-        
+
     </style>
 </head>
 <body>
-    <div class="container-fluid position-sticky fixed-top">
+    <div class="container-fluid fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand text-uppercase" href="#">Movies</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-          
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -46,22 +46,19 @@
                 </li>
 
               </ul>
-              
+
               <livewire:search-dropdown>
 
             </div>
           </nav>
     </div>
 
-    <div class="container-fluid pt-4 bg-secondary">
+    <div class="container-fluid  bg-secondary" style="margin-top: 3rem">
 
        @yield('content')
 
     </div>
-
-
-
-
+    <script src="{{ asset('js/app.js') }}"></script>
     <script>
       $('#modal').on('shown.bs.modal', function () {
       $('#myInput').trigger('focus')
@@ -72,7 +69,6 @@
     });
 
     </script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
     <livewire:scripts>
 </body>
 </html>
