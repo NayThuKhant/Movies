@@ -16,7 +16,6 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
         "livewire/livewire": "^1.2",
-        "ext-http": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
