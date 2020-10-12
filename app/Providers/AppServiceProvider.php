@@ -22,8 +22,8 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot(Url $url)
+    public function boot()
     {
-         $url->forceSchema('https');
+         Url::forceSchema('https');
     }
 }
